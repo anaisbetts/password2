@@ -28,9 +28,10 @@ export default class extends React.Component {
 
   generate () {
     let masterPassword = this.masterPasswordInput.value
-    if ((masterPassword || masterPassword.length < 1) && ('localStorage' in window)) {
-      masterPassword = localStorage.getItem('master') || '';
-      this.masterPasswordInput.value = masterPassword;
+    if ((masterPassword || masterPassword.length < 1) && ('localStorage' in window) && !this.setInitialPassword) {
+      this.setInitialPassword = true
+      masterPassword = localStorage.getItem('master') || ''
+      this.masterPasswordInput.value = masterPassword
     }
 
     const salt = `${this.tldInput.value}${this.usernameInput.value}`
