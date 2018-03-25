@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  text-rendering: geometricPrecision;
+}
+
+html {
+  background: #263238;
+}
+
+body {
+  color: #900068;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  margin: 0;
+}
+
+.app {
+  padding: 6px 12px;
+}
+
+.bookmarklet {
+  display: inline-block;
+  color: #ff5252;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 12px;
+}
+
+.github {
+  display: block;
+  margin-top: 24px;
+  color: #ababab;
+  text-align: center;
+  font-size: 10px;
+}
+
+input {
+  background: #263238;
+  color: #2b98f0;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-size: 18px;
+  width: 100%;
+  padding: 6px 0;
+  border: none;
+  outline: none;
+  text-shadow: 0px 0px 0px #000;
+}
+
+.password {
+  color: #9ccc65;
+  border: double 6px #9ccc65;
+  border-radius: 0;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 6px;
+  margin-top: 12px;
+  animation-duration: 900ms;
+  animation-fill-mode: both;
+  position: relative;
+}
+
+.password button {
+  cursor: pointer;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #7e7b65;
+  background: none;
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 12px;
+  top: 6px;
+  padding: 6px 12px;
+  margin: -6px -12px;
+}
+
+.password button:hover {
+  color: #fee94e;
+}
+
+@keyframes flash {
+  from, 50%, to {
+    border-color: #9ccc65;
+    color: #9ccc65;
+  }
+
+  25%, 75% {
+    color: #263238;
+  }
+}
+
+@media (min-width: 420px) {
+  .app {
+    width: 380px;
+    margin: auto;
+  }
+}

@@ -1,25 +1,18 @@
 {
-  "name": "password2",
-  "version": "0.0.3",
-  "description": "One password, right way.",
+  "name": "d3-test",
+  "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "node server",
-    "build": "next build",
-    "start": "cross-env NODE_ENV=production node server"
-  },
-  "author": "Paul Betts <paul@paulbetts.org>, Vitaly Domnikov <dotcypress@gmail.com>",
-  "license": "MIT",
   "dependencies": {
-    "copy-to-clipboard": "^3.0.5",
-    "express": "^4.15.2",
-    "next": "^2.1.1",
+    "copy-to-clipboard": "^3.0.8",
     "pbkdf2-sha256": "^1.1.1",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.1"
   },
-  "devDependencies": {
-    "cross-env": "^4.0.0",
-    "sw-precache-webpack-plugin": "^0.9.0"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
